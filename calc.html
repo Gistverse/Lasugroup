@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>webinar.com</title>
+	<link rel="stylesheet" type="text/css" href="calc.css">
+    <link rel="stylesheet" href="bootstrap.css">
+<link rel="stylesheet" href="index.css">
+
+
+
+</head>
+<body>
+    <div class="modal modal-tour position-static d-block bg-secondary py-5 shadow-lg" tabindex="-1" role="dialog" id="modalTour">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content rounded-6 shadow">
+            <div class="modal-body ">
+                <form class="form-group">
+              <h2 class="fw-bold mb-0">1. JAMB SCORE<input class="form-control " type="number" id="utm" placeholder="Type your jamb score here"></h2>
+
+              <ul class="d-grid  mt-2 list-unstyled">
+                <li class="d-flex">
+                    <div>
+                    <h5 class="mb-0"><label><b>1. MATHEMATICS</b><select class="form-control-lg w-100" id="grade1">
+                        <option value="A1">A1</option>
+                        <option value="B2">B2</option>
+                        <option value="B3">B3</option>
+                        <option value="C4">C4</option>
+                        <option value="C5">C5</option>
+                        <option value="C6">C6</option>
+                        <option value="D7">D7</option>
+                        <option value="E8">E8</option>
+                        <option value="F9">F9</option>
+                        
+            
+                    </select>
+                    </label></h5>
+                    
+                  </div>
+                </li>
+                <li class="d-flex ">
+                  
+                  <div>
+                    <h5 class="mb-0"> <label><b>2. ENGLISH LANGUAGE</b><select class="form-control-lg w-100" id="grade2">
+                        <option value="A1">A1</option>
+                        <option value="B2">B2</option>
+                        <option value="B3">B3</option>
+                        <option value="C4">C4</option>
+                        <option value="C5">C5</option>
+                        <option value="C6">C6</option>
+                        <option value="D7">D7</option>
+                        <option value="E8">E8</option>
+                        <option value="F9">F9</option>
+                    </select>
+                    </label></h5>
+                  </div>
+                </li>
+                <li class="d-flex ">
+                  <div>
+                    <h5 class="mb-0"><label><b>3. OTHER SUBJECT 1</b><select class="form-control-lg w-100 " id="grade3">
+                        <option value="A1">A1</option>
+                        <option value="B2">B2</option>
+                        <option value="B3">B3</option>
+                        <option value="C4">C4</option>
+                        <option value="C5">C5</option>
+                        <option value="C6">C6</option>
+                        <option value="D7">D7</option>
+                        <option value="E8">E8</option>
+                        <option value="F9">F9</option>
+                    </select>
+                    </label>
+                </h5>
+                
+                  </div>
+                </li>
+                <li class="d-flex ">
+                      <div>
+                      <h5 class="mb-0">  <label><b>4. OTHER SUBJECT 2</b><select class="form-control-lg w-100"  id="grade4">
+                        <option value="A1">A1</option>
+                        <option value="B2">B2</option>
+                        <option value="B3">B3</option>
+                        <option value="C4">C4</option>
+                        <option value="C5">C5</option>
+                        <option value="C6">C6</option>
+                        <option value="D7">D7</option>
+                        <option value="E8">E8</option>
+                        <option value="F9">F9</option>
+                    </select>
+                    </label></h5>
+                    </div>
+                  </li>
+
+
+                  <li class="d-flex ">
+                    <div>
+                      <h5 class="mb-0"> <label><b>5. OTHER SUBJECT 3</b><select class="form-control-lg w-100" id="grade5">
+                        <option value="A1">A1</option>
+                        <option value="B2">B2</option>
+                        <option value="B3">B3</option>
+                        <option value="C4">C4</option>
+                        <option value="C5">C5</option>
+                        <option value="C6">C6</option>
+                        <option value="D7">D7</option>
+                        <option value="E8">E8</option>
+                        <option value="F9">F9</option>
+                    </select>
+                    </label></h5>
+                    </div>
+                  </li>
+
+
+
+
+
+
+              </ul>
+              <button type="button" class="btn btn-lg btn-primary mt-2 w-100" data-bs-toggle="modal" data-bs-target="#exampleModalCenteredScrollable" onclick="callMe()">TAP ME TO CALCULATE  AGGREGATE</button>
+                </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    
+	
+      <!-- <textarea style="font-size: 90px; font-weight: bold; text-align: center; width: 100%;" class="form-control  col-lg-5  " type="number" id="aggregate" readonly="true"></textarea>
+       <p style="text-align: center;"><small>Brought to you by OneTech <i class="fa fa-trademark" aria-hidden="true"></i></small></p>
+      --></div>
+        </div>
+       
+
+    </form>
+
+</div>
+
+    </div>
+
+    
+
+
+
+
+    <div class="modal fade" id="exampleModalCenteredScrollable" tabindex="-1" aria-labelledby="exampleModalCenteredScrollableTitle" aria-hidden="false">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fw-bold" id="exampleModalCenteredScrollableTitle"></h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p  id="aggregate"  style="font-size: 90px; font-weight: bold; text-align: center; width: 100%;"></p>
+              <br><br><br>
+              <p id="course"></p><!--coming soon-->
+              <p id="info"></p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">OK</button>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+<script src="bootstrap.bundle.min.js"></script>
+
+<script src="cheatsheet.js"></script>
+    <script src="calc.js"></script>
+
