@@ -20,6 +20,8 @@ function callMe() {
       var option1= 5;
       break;
       default :
+      document.getElementById('goahead').innerHTML ="";
+      document.getElementById('aggregate').innerHTML = "";
       document.getElementById("info").innerHTML='HAVING A D7 AND BELOW IN ANY OF YOUR MAIN WAEC SUBJECTS DISQUALIFIES YOU FROM BEING ABLE TO PARTICIPATE IN THE LASU ADMISSION SCREENING!... KINDLY DO A CHANGE OF SCHOOL...THANKS';
       document.getElementById('exampleModalCenteredScrollableTitle').innerHTML = 'WARNING';
       document.getElementById('aggregate').innerHTML = "";
@@ -47,6 +49,8 @@ function callMe() {
       var option2= 5;
       break;
       default :
+      document.getElementById('goahead').innerHTML ="";
+      document.getElementById('aggregate').innerHTML = "";
       document.getElementById("info").innerHTML='HAVING A D7 AND BELOW IN ANY OF YOUR MAIN WAEC SUBJECTS DISQUALIFIES YOU FROM BEING ABLE TO PARTICIPATE IN THE LASU ADMISSION SCREENING!... KINDLY DO A CHANGE OF SCHOOL...THANKS';
       document.getElementById('exampleModalCenteredScrollableTitle').innerHTML = 'WARNING';
        document.getElementById('aggregate').innerHTML = "";
@@ -74,6 +78,8 @@ function callMe() {
       var option3= 5;
       break;
       default :
+      document.getElementById('goahead').innerHTML ="";
+      document.getElementById('aggregate').innerHTML = "";
       document.getElementById("info").innerHTML='HAVING A D7 AND BELOW IN ANY OF YOUR MAIN WAEC SUBJECTS DISQUALIFIES YOU FROM BEING ABLE TO PARTICIPATE IN THE LASU ADMISSION SCREENING!... KINDLY DO A CHANGE OF SCHOOL...THANKS';
       document.getElementById('exampleModalCenteredScrollableTitle').innerHTML = 'WARNING';
       document.getElementById('aggregate').innerHTML = "";
@@ -101,6 +107,8 @@ function callMe() {
       var option4= 5;
       break;
       default :
+      document.getElementById('goahead').innerHTML ="";
+      document.getElementById('aggregate').innerHTML = "";
       document.getElementById("info").innerHTML='HAVING A D7 AND BELOW IN ANY OF YOUR MAIN WAEC SUBJECTS DISQUALIFIES YOU FROM BEING ABLE TO PARTICIPATE IN THE LASU ADMISSION SCREENING!... KINDLY DO A CHANGE OF SCHOOL...THANKS';
       document.getElementById('exampleModalCenteredScrollableTitle').innerHTML = 'WARNING';
       document.getElementById('aggregate').innerHTML = "";
@@ -128,6 +136,8 @@ function callMe() {
       var option5= 5;
       break;
       default :
+      document.getElementById('goahead').innerHTML ="";
+       document.getElementById('aggregate').innerHTML = "";
       document.getElementById("info").innerHTML='HAVING A D7 AND BELOW IN ANY OF YOUR MAIN WAEC SUBJECTS DISQUALIFIES YOU FROM BEING ABLE TO PARTICIPATE IN THE LASU ADMISSION SCREENING!... KINDLY DO A CHANGE OF SCHOOL...THANKS';
       document.getElementById('exampleModalCenteredScrollableTitle').innerHTML = 'WARNING';
       document.getElementById('aggregate').innerHTML = "";
@@ -136,22 +146,30 @@ function callMe() {
   }
   var jamb = document.getElementById('utm').value;
       if (jamb =="") {
+        document.getElementById('goahead').innerHTML ="";
+        document.getElementById('aggregate').innerHTML = "";
         document.getElementById('exampleModalCenteredScrollableTitle').innerHTML = 'WARNING';
         document.getElementById("info").innerHTML= 'HELLO HANG ON!!!, YOU DID NOT INPUT YOUR JAMB SCORE!!';
         return false;
       }
       if (jamb>400) {
+        document.getElementById('goahead').innerHTML ="";
+        document.getElementById('aggregate').innerHTML = "";
         document.getElementById('exampleModalCenteredScrollableTitle').innerHTML = 'WARNING';
         document.getElementById("info").innerHTML='HELLO DEAR, YOU ENTERED AN INVALID JAMB SCORE, KINDLY INPUT A VALID SCORE TO GET YOUR ACCURATE AGGREGATE SCORE';
               return false;
       }
       if (jamb<190) {
+        document.getElementById('goahead').innerHTML ="";
+        document.getElementById('aggregate').innerHTML = "";
         document.getElementById('exampleModalCenteredScrollableTitle').innerHTML = 'WARNING';
         document.getElementById("info").innerHTML='DEAR FRIEND, LASU ONLY ADMITS CANDIDATES WHO SCORED A MINIMUM OF 190 IN THE LAST CONDUCTED UTME..YOU ARE ADVICED TO DO A CHANGE OF SCHOOL! THANKS.';
               return false;
           }
           for (var i = 0; i<jamb.length; i++) {
           if (jamb[i] == ".") {
+            document.getElementById('goahead').innerHTML ="";
+            document.getElementById('aggregate').innerHTML = "";
             document.getElementById('exampleModalCenteredScrollableTitle').innerHTML = 'WARNING';
             document.getElementById("info").innerHTML="HELLO USER, PLEASE NOTE THAT YOU CAN'T HAVE A DECIMAL POINT IN YOUR JAMB SCORE";
          return false;

@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lasuenquiry.com</title>
+    <script src="https://kit.fontawesome.com/aae5bba10a.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="index.css">
@@ -17,7 +19,7 @@
 <body>
     
 
-    <nav >
+    <nav id="up">
       <div class=" container-fluid navbar navbar-dark bg-dark shadow-sm">
         <div class="container">
           <a href="https://chat.whatsapp.com/G4YnEPeVeTE1h2pXzJuz6z" class="navbar-brand d-flex align-items-center">
@@ -61,7 +63,7 @@
   
     </nav>
 
-<a href="#myCarousel"><button class="btn btn-primary" style="z-index: 99; position:fixed; bottom: 0%;">BACK TO TOP</button></a>
+<a href="#up"><button class="btn btn-primary" style="z-index: 99; position:fixed; bottom: 0%;"><i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i></button></a>
 
   <!--nav ends here-->
 
@@ -90,8 +92,8 @@
 
         <div class="container">
           <div class="carousel-caption">
-            <h1 class="display-2 text-black fw-bold">Latest News:</h1>
-            <p class="fw-bold text-black">WAEC(West African Examination Council) Examination is Currently on-going</p>
+            <h1 class="display-2 text-white fw-bold">Latest News:</h1>
+            <p class="fw-bold text-white">WAEC(West African Examination Council) Examination is Currently on-going</p>
             <!--<p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>-->
           </div>
         </div>
@@ -135,7 +137,7 @@
       <hr>
       <p>Tap the Button below to see these Courses, as well as their respective subject Requirements in both JAMB UTME and O' Level</p>
       
-          <a href="http://services.lidc.lasu.edu.ng/admissionscreening/courserequirement/index.php"><button class="btn btn-lg btn-outline-light" type="button">List of Courses</button></a>
+          <a href="https://services.lidc.lasu.edu.ng/admissionscreening/courserequirement/index.php"><button class="btn btn-lg btn-outline-light" type="button">List of Courses</button></a>
     </div>
   </div>
 </div>
@@ -146,12 +148,8 @@
 
 <!--aggregate calculator-->
 
-<div id="calculator" class="modal modal-tour position-static d-block bg-secondary p-5 shadow-lg" tabindex="-1" role="dialog" id="modalTour">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content rounded-6 shadow">
-      <div class="modal-body ">
-        <div  class="bd-example mt-4 shadow-lg">
-          <div class="alert alert-success shadow-lg" role="alert">
+<div id="calculator" class="container-fluid bg-light">
+         <div class="alert alert-success shadow-lg" role="alert">
             <h4 class="alert-heading">Hey There!</h4>
             <p>Below, is a Calculator you can use to Calculate your Aggregate scores without having errors! cos some of you calculate your aggregates and say you have <code>99.3</code>! LOL... </p>
             <hr>
@@ -163,8 +161,8 @@
             </p>  
             
               </div>
-          </div>
-        </div>
+          
+        
           <form class="form-group p-4">
         <h2 class="fw-bold mb-0">1. JAMB SCORE<input class="form-control w-75 " type="number" id="utm" placeholder="Type your Jamb score here"></h2>
 
@@ -268,17 +266,6 @@
         </ul>
         <button type="button" class="btn btn-lg btn-primary mt-2 w-100" data-bs-toggle="modal" data-bs-target="#exampleModalCenteredScrollable" onclick="callMe()">TAP ME TO CALCULATE  AGGREGATE</button>
           </form>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-  </div>
- 
-
-</form>
-
-</div>
 
 </div>
 
