@@ -112,3 +112,12 @@
     width: 380px;
   }
   
+
+  .tabili {
+    overflow-y: scroll;
+  }
+
+  #QA{
+    overflow-y: scroll;
+    height: 200px;
+  }
