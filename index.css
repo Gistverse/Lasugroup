@@ -117,7 +117,6 @@
    
   }
 
- /* #QA{
-    overflow-y: scroll;
-    height: 200px;
-  }*/
+td {
+  text-transform: capitalize;
+}
