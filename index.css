@@ -120,3 +120,20 @@
 td {
   text-transform: capitalize;
 }
+a {
+  text-decoration: none;
+}
+.thanks {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+}
+.thank {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold; 
+}
+
+footer {
+  overflow-y: hidden;
+}
