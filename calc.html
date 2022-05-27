@@ -12,161 +12,255 @@
 
 </head>
 <body>
-    <div class="modal modal-tour position-static d-block bg-secondary py-5 shadow-lg" tabindex="-1" role="dialog" id="modalTour">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content rounded-6 shadow">
-            <div class="modal-body ">
-                <form class="form-group">
-              <h2 class="fw-bold mb-0">1. JAMB SCORE<input class="form-control " type="number" id="utm" placeholder="Type your jamb score here"></h2>
-
-              <ul class="d-grid  mt-2 list-unstyled">
-                <li class="d-flex">
-                    <div>
-                    <h5 class="mb-0"><label><b>1. MATHEMATICS</b><select class="form-control-lg w-100" id="grade1">
-                        <option value="A1">A1</option>
-                        <option value="B2">B2</option>
-                        <option value="B3">B3</option>
-                        <option value="C4">C4</option>
-                        <option value="C5">C5</option>
-                        <option value="C6">C6</option>
-                        <option value="D7">D7</option>
-                        <option value="E8">E8</option>
-                        <option value="F9">F9</option>
-                        
-            
-                    </select>
-                    </label></h5>
-                    
-                  </div>
-                </li>
-                <li class="d-flex ">
-                  
-                  <div>
-                    <h5 class="mb-0"> <label><b>2. ENGLISH LANGUAGE</b><select class="form-control-lg w-100" id="grade2">
-                        <option value="A1">A1</option>
-                        <option value="B2">B2</option>
-                        <option value="B3">B3</option>
-                        <option value="C4">C4</option>
-                        <option value="C5">C5</option>
-                        <option value="C6">C6</option>
-                        <option value="D7">D7</option>
-                        <option value="E8">E8</option>
-                        <option value="F9">F9</option>
-                    </select>
-                    </label></h5>
-                  </div>
-                </li>
-                <li class="d-flex ">
-                  <div>
-                    <h5 class="mb-0"><label><b>3. OTHER SUBJECT 1</b><select class="form-control-lg w-100 " id="grade3">
-                        <option value="A1">A1</option>
-                        <option value="B2">B2</option>
-                        <option value="B3">B3</option>
-                        <option value="C4">C4</option>
-                        <option value="C5">C5</option>
-                        <option value="C6">C6</option>
-                        <option value="D7">D7</option>
-                        <option value="E8">E8</option>
-                        <option value="F9">F9</option>
-                    </select>
-                    </label>
-                </h5>
-                
-                  </div>
-                </li>
-                <li class="d-flex ">
-                      <div>
-                      <h5 class="mb-0">  <label><b>4. OTHER SUBJECT 2</b><select class="form-control-lg w-100"  id="grade4">
-                        <option value="A1">A1</option>
-                        <option value="B2">B2</option>
-                        <option value="B3">B3</option>
-                        <option value="C4">C4</option>
-                        <option value="C5">C5</option>
-                        <option value="C6">C6</option>
-                        <option value="D7">D7</option>
-                        <option value="E8">E8</option>
-                        <option value="F9">F9</option>
-                    </select>
-                    </label></h5>
-                    </div>
-                  </li>
-
-
-                  <li class="d-flex ">
-                    <div>
-                      <h5 class="mb-0"> <label><b>5. OTHER SUBJECT 3</b><select class="form-control-lg w-100" id="grade5">
-                        <option value="A1">A1</option>
-                        <option value="B2">B2</option>
-                        <option value="B3">B3</option>
-                        <option value="C4">C4</option>
-                        <option value="C5">C5</option>
-                        <option value="C6">C6</option>
-                        <option value="D7">D7</option>
-                        <option value="E8">E8</option>
-                        <option value="F9">F9</option>
-                    </select>
-                    </label></h5>
-                    </div>
-                  </li>
-
-
-
-
-
-
-              </ul>
-              <button type="button" class="btn btn-lg btn-primary mt-2 w-100" data-bs-toggle="modal" data-bs-target="#exampleModalCenteredScrollable" onclick="callMe()">TAP ME TO CALCULATE  AGGREGATE</button>
-                </form>
-            </div>
-          </div>
-        </div>
-      </div>
-      
     
-	
-      <!-- <textarea style="font-size: 90px; font-weight: bold; text-align: center; width: 100%;" class="form-control  col-lg-5  " type="number" id="aggregate" readonly="true"></textarea>
-       <p style="text-align: center;"><small>Brought to you by OneTech <i class="fa fa-trademark" aria-hidden="true"></i></small></p>
-      --></div>
-        </div>
+  <div id="calculator" class="container-fluid bg-light">
+    <div class="alert alert-dark shadow-lg mt-3" role="alert">
+       <h4 class="alert-heading">Hey There!</h4>
+       <p>Below, is a Calculator you can use to Calculate your Aggregate scores without having errors! cos some of you calculate your aggregates and say you have <code>99.3</code>! LOL... </p>
+       <hr>
+       <p class="text-danger mb-0">
+         <button type="button" class="btn btn-dark shadow-lg" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="(TO CLOSE THIS MENU, TAP THE BUTTON ABOVE AGAIN).....Step 1: Divide your Jamb Score by 8. Step 2: Get your O' level grades for your 5 Main subjects and assign to them the following points: A1 - 10 , B2- 9, B3-8, C4-7, C5-6, C6-5 , Now add them together to give you your o'level total points. Step3: Add what you got in Jamb after dividing by 8 with your Total O'level points, which should be over 100. ">
+           Tap me to know how aggregates are calculated
+         </button>
+         
+       </p>  
        
+         </div>
+     
+   
+     <form class="form-group p-4">
+      <p class=" mt-3 text-warning"><small>Enter your O' Level Grades for your 5 main subjects in the selection below. <p><a href="https://services.lidc.lasu.edu.ng/admissionscreening/courserequirement/index.php"><kbd>(Click here)</kbd></a>to know the right subject combination for your course</small></p></p>
+      <h5 class="mb-0"><label><b><code>select your course here</code></b><select onchange="writeCourse()" class="form-control-lg w-100" id="course">
+        <option class="fw-bold" value="none">Select your course here</option>  
+        <option value="acct">Accounting/Accountancy</option>
+        <option value="ara">Arabic Studies</option>
+        <option value="bank">Banking and Finance</option>
+        <option value="bch">Biochemistry</option>
+        <option value="bot">Botany</option>
+        <option value="busedu">Business Education</option>
+        <option value="chpoe">Chemical and Polymer Engineering</option>
+        <option value="chem">Chemistry</option>
+        <option value="chris">Christian Religious Knowledge/Studies</option>
+        <option value="law">Civil Law</option>
+        <option value="comp">Computer Science</option>
+        <option value="curr">Curriculum Studies</option>
+        <option value="dent">Dentistry and Dental Surgery</option>
+        <option value="drama">Drama/Dramatic/Performing Art</option>
+        <option value="eco">Economics</option>
+        <option value="eduacct">Education and Accountancy  </option>
+        <option value="eduara">Education and Arabic</option>
+        <option value="edubio">Education and Biology</option>
+        <option value="educhem">Education and Chemistry</option>
+        <option value="educhris">Education and Christian Religious Studies</option>
+        <option value="educomp">Education and Computer Science</option>
+        <option value="edueco">Education and Economics</option>
+        <option value="edueng">Education and English Language</option>
+        <option value="edufren">Education and French</option>
+        <option value="edugeo">Education and Geography</option>
+        <option value="eduhist">Education and History</option>
+        <option value="eduisl">Education and Islamic Studies</option>
+        <option value="edumaths">Education and Mathematics</option>
+        <option value="eduphy">Education and Physics</option>
+        <option value="edupol">Education and Political Science</option>
+        <option value="eduyor">Education and Yoruba</option>
+        <option value="edulang">Education, Language and French</option>
+        <option value="edufound">Educational Foundations</option>
+        <option value="elect">Electronics and Computer Engineering</option>
+        <option value="fish">Fisheries (Under Agriculture)</option>
+        <option value="geo">Geography and Planning</option>
+        <option value="german">German Combined with French and Russia</option>
+        <option value="health">Health Education </option>
+        <option value="hist">History and International Studies</option>
+        <option value="indus">Industrial Relations and Personnel Management</option>
+        <option value="insur">Insurance</option>
+        <option value="isl">Islamic Studies</option>
+        <option value="mar">Marketing</option>
+        <option value="mass">Mass Communication</option>
+        <option value="math">Mathematics</option>
+        <option value="mech">Mechanical Engineering</option>
+        <option value="med">Medicine and Surgery</option>
+        <option value="micro">Microbiology</option>
+        <option value="music">Music</option>
+        <option value="nur">Nursing/Nursing Science</option>
+        <option value="phe">Physical and Health Education</option>
+        <option value="phy">Physics</option>
+        <option value="physio">Physiology</option>
+        <option value="pol">Political Science</option>
+        <option value="port">Portuguese / English</option>
+        <option value="psy">Psychology</option>
+        <option value="pa">Public Administration</option>
+        <option value="socio">Sociology</option>
+        <option value="techv">Technological Management</option>
+        <option value="techve">Technology and Vocational Education</option>
+        <option value="tmt">Transport Management Technology</option>
+        <option value="tca">Yoruba and Communication Arts</option>
+        <option value="zoo">Zoology</option>
+          
 
-    </form>
+      </select>
+      </label></h5>
+      
+
+       </select>
+   <h2 class="fw-bold mb-0">1. JAMB SCORE<input style="height: 50px;" class="form-control w-75 " type="number" id="utm" placeholder="Type your Jamb score here" required max="400" min="190" minlength="3"></h2>
+
+   <ul class="d-grid  mt-2 list-unstyled">
+     <li class="d-flex">
+         <div>
+
+<p class=" mt-3 text-warning"><small>Enter your O' Level Grades for your 5 main subjects in the selection below. <p><a href="https://services.lidc.lasu.edu.ng/admissionscreening/courserequirement/index.php"><kbd>(Click here)</kbd></a>to know the right subject combination for your course</small></p></p>
+         <h5 class="mb-0"><label><b><code>1. MATHEMATICS</code></b><select class="form-control-lg w-100" id="grade1">
+             <option value="A1">A1</option>
+             <option value="B2">B2</option>
+             <option value="B3">B3</option>
+             <option value="C4">C4</option>
+             <option value="C5">C5</option>
+             <option value="C6">C6</option>
+             <option value="D7">D7</option>
+             <option value="E8">E8</option>
+             <option value="F9">F9</option>
+             
+ 
+         </select>
+         </label></h5>
+         
+       </div>
+     </li>
+     <li class="d-flex ">
+       
+       <div>
+         <h5 class="mb-0"> <label><b><code>2. ENGLISH LANGUAGE</code></b><select class="form-control-lg w-100" id="grade2">
+             <option value="A1">A1</option>
+             <option value="B2">B2</option>
+             <option value="B3">B3</option>
+             <option value="C4">C4</option>
+             <option value="C5">C5</option>
+             <option value="C6">C6</option>
+             <option value="D7">D7</option>
+             <option value="E8">E8</option>
+             <option value="F9">F9</option>
+         </select>
+         </label></h5>
+       </div>
+     </li>
+     <li class="d-flex ">
+       <div>
+         <h5 class="mb-0"><label><b><code>3.<span id="course1"></span></code></b><select class="form-control-lg w-100 " id="grade3">
+             <option value="A1">A1</option>
+             <option value="B2">B2</option>
+             <option value="B3">B3</option>
+             <option value="C4">C4</option>
+             <option value="C5">C5</option>
+             <option value="C6">C6</option>
+             <option value="D7">D7</option>
+             <option value="E8">E8</option>
+             <option value="F9">F9</option>
+         </select>
+         </label>
+     </h5>
+     
+       </div>
+     </li>
+     <li class="d-flex ">
+           <div>
+           <h5 class="mb-0">  <label><b><code>4.<span id="course2"></span></code></b><select class="form-control-lg w-100"  id="grade4">
+             <option value="A1">A1</option>
+             <option value="B2">B2</option>
+             <option value="B3">B3</option>
+             <option value="C4">C4</option>
+             <option value="C5">C5</option>
+             <option value="C6">C6</option>
+             <option value="D7">D7</option>
+             <option value="E8">E8</option>
+             <option value="F9">F9</option>
+         </select>
+         </label></h5>
+         </div>
+       </li>
+
+
+       <li class="d-flex ">
+         <div>
+           <h5 class="mb-0"> <label><b><code>5.<span id="course3"></span></code></b><select class="form-control-lg w-100" id="grade5">
+             <option value="A1">A1</option>
+             <option value="B2">B2</option>
+             <option value="B3">B3</option>
+             <option value="C4">C4</option>
+             <option value="C5">C5</option>
+             <option value="C6">C6</option>
+             <option value="D7">D7</option>
+             <option value="E8">E8</option>
+             <option value="F9">F9</option>
+         </select>
+         </label></h5>
+         </div>
+       </li>
+
+
+
+
+
+
+   </ul>
+   <button type="button" class="btn btn-lg btn-dark mt-2 w-100" data-bs-toggle="modal" data-bs-target="#exampleModalCenteredScrollable" onclick="callMe()">TAP ME TO CALCULATE  AGGREGATE</button>
+     </form>
 
 </div>
 
-    </div>
-
-    
 
 
 
 
-    <div class="modal fade" id="exampleModalCenteredScrollable" tabindex="-1" aria-labelledby="exampleModalCenteredScrollableTitle" aria-hidden="false">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title fw-bold" id="exampleModalCenteredScrollableTitle"></h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <p  id="aggregate"  style="font-size: 90px; font-weight: bold; text-align: center; width: 100%;"></p>
-              <br><br><br>
-              <p id="course"></p><!--coming soon-->
-              <p id="info"></p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">OK</button>
-              
-            </div>
-          </div>
-        </div>
-      </div>
+
+<div class="modal fade shadow-sm" id="exampleModalCenteredScrollable" tabindex="-1" aria-labelledby="exampleModalCenteredScrollableTitle" aria-hidden="false">
+<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+<div class="modal-content">
+ <div class="modal-header">
+   <h5 class="modal-title fw-bold" id="exampleModalCenteredScrollableTitle"></h5>
+   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+ </div>
+ <div class="modal-body">
+   <p  id="aggregate"  style="font-size: 90px; font-weight: bold; text-align: center; width: 100%;"></p>
+   <br><br><br>
+   <p id="goahead"></p>
+   <p id="course"></p><!--coming soon-->
+   <p id="info" class="display-5 fw-bold"></p>
+ </div>
+ <div class="modal-footer">
+   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">OK</button>
+   
+ </div>
+</div>
+</div>
+</div>
+
+
+<!--calculator ends here-->
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 
 <script src="bootstrap.bundle.min.js"></script>
-
+<script src="calcai.js"></script>
 <script src="cheatsheet.js"></script>
-    <script src="calc.js"></script>
+<script src="calc.js"></script>
+<script src="calcai.js"></script>
 
+
+
+
+
+</body>
+</html>
